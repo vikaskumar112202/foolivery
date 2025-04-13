@@ -1,21 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
+import './style.css'
+import logo from '../../assets/restaurants/logo.png'
+import cat1 from '../../assets/category/home_cat_pizza.jpg'
+import cat2 from '../../assets/category/home_cat_sushi.jpg'
+import cat3 from '../../assets/category/home_cat_bakery.jpg'
+import cat4 from '../../assets/category/home_cat_chinesse.jpg'
+import cat5 from '../../assets/category/home_cat_hamburgher.jpg'
+import cat6 from '../../assets/category/home_cat_vegetarian.jpg'
+import trr1 from '../../assets/restaurants/location_list_1.jpg'
+import trr2 from '../../assets/restaurants/location_list_2.jpg'
+import trr3 from '../../assets/restaurants/location_list_3.jpg'
+import trr4 from '../../assets/restaurants/location_list_4.jpg'
+import trr5 from '../../assets/restaurants/location_list_5.jpg'
+import trr6 from '../../assets/restaurants/location_list_5.jpg'
+import how1 from '../../assets/cta/how_1.svg'
+import how2 from '../../assets/cta/how_2.svg'
+import how3 from '../../assets/cta/how_3.svg'
 
-    <title>Foolivery</title>
-  </head>
-  <body>
-    <!-- Navbar Section -->
-    <header class="flex alignCenter">
-      <nav class="flex alignCenter">
-        <div class="logo flex alignCenter">
-          <img src="assets/restaurants/logo.png" />
+const Homepage =()=>{
+ return <>
+     <header className="flex alignCenter">
+      <nav className="flex alignCenter">
+        <div className="logo flex alignCenter">
+          <img src={logo} />
         </div>
-        <div class="menu">
-          <ul class="flex">
+        <div className="menu">
+          <ul className="flex">
             <li><a href="/">Home</a></li>
             <li><a href="/">About</a></li>
             <li><a href="/">Contact</a></li>
@@ -24,14 +33,13 @@
         </div>
       </nav>
     </header>
-
     <main>
-      <!-- Hero Section -->
-      <section class="hero flex alignCenter">
-        <div class="heroContainer">
+      {/* <!-- Hero Section --> */}
+      <section className="hero flex alignCenter">
+        <div className="heroContainer">
           <h1>Delivery or Takeaway Food</h1>
           <h2>The best restaurants at the best price</h2>
-          <div class="heroSearch">
+          <div className="heroSearch">
             <input placeholder="Address, neighborhood..." />
             <button id="heroBtn">Search</button>
           </div>
@@ -44,57 +52,57 @@
         </div>
       </section>
 
-      <section class="categories flex alignCenter">
-        <div class="catContainer">
+      <section className="categories flex alignCenter">
+        <div className="catContainer">
           <h2>Popular Categories</h2>
-          <p class="catDesc">
+          <p className="catDesc">
             Cum doctus civibus efficiantur in imperdiet deterruisset
           </p>
-          <div class="catBoxes flex">
-            <div class="catBox">
-              <!-- <div class="catBoxMark"><span>98</span></div> -->
-              <img src="assets/category/home_cat_pizza.jpg" />
-              <div class="catBoxContent">
+          <div className="catBoxes flex">
+            <div className="catBox">
+              {/* <!-- <div className="catBoxMark"><span>98</span></div> --> */}
+              <img src={cat1} />
+              <div className="catBoxContent">
                 <h3>Pizza</h3>
                 <p>Avg price $40</p>
               </div>
             </div>
-            <div class="catBox">
-              <!-- <div class="catBoxMark"><span>98</span></div> -->
-              <img src="./assets/category/home_cat_sushi.jpg" />
-              <div class="catBoxContent">
+            <div className="catBox">
+              {/* <!-- <div className="catBoxMark"><span>98</span></div> --> */}
+              <img src={cat2} />
+              <div className="catBoxContent">
                 <h3>Japenese</h3>
                 <p>Avg price $40</p>
               </div>
             </div>
-            <div class="catBox">
-              <!-- <div class="catBoxMark"><span>98</span></div> -->
-              <img src="./assets/category/home_cat_hamburgher.jpg" />
-              <div class="catBoxContent">
+            <div className="catBox">
+              {/* <!-- <div className="catBoxMark"><span>98</span></div> --> */}
+              <img src={cat5} />
+              <div className="catBoxContent">
                 <h3>Burghers</h3>
                 <p>Avg price $40</p>
               </div>
             </div>
-            <div class="catBox">
-              <!-- <div class="catBoxMark"><span>98</span></div> -->
-              <img src="./assets/category/home_cat_vegetarian.jpg" />
-              <div class="catBoxContent">
+            <div className="catBox">
+              {/* <!-- <div className="catBoxMark"><span>98</span></div> --> */}
+              <img src={cat6} />
+              <div className="catBoxContent">
                 <h3>Vegetarian</h3>
                 <p>Avg price $40</p>
               </div>
             </div>
-            <div class="catBox">
-              <!-- <div class="catBoxMark"><span>98</span></div> -->
-              <img src="./assets/category/home_cat_bakery.jpg" />
-              <div class="catBoxContent">
+            <div className="catBox">
+              {/* <!-- <div className="catBoxMark"><span>98</span></div> --> */}
+              <img src={cat3}/>
+              <div className="catBoxContent">
                 <h3>Bakery</h3>
                 <p>Avg price $40</p>
               </div>
             </div>
-            <div class="catBox">
-              <!-- <div class="catBoxMark"><span>98</span></div> -->
-              <img src="./assets/category/home_cat_chinesse.jpg" />
-              <div class="catBoxContent">
+            <div className="catBox">
+              {/* <!-- <div className="catBoxMark"><span>98</span></div> --> */}
+              <img src={cat4} />
+              <div className="catBoxContent">
                 <h3>Chinese</h3>
                 <p>Avg price $40</p>
               </div>
@@ -103,20 +111,20 @@
         </div>
       </section>
 
-      <section class="topRR flex alignCenter">
-        <div class="topRRContainer">
+      <section className="topRR flex alignCenter">
+        <div className="topRRContainer">
           <h2>Top Rated Restaurants</h2>
-          <p class="topRRDesc">
+          <p className="topRRDesc">
             Cum doctus civibus efficiantur in imperdiet deterruisset.
           </p>
-          <div class="topRRBoxes flex">
-            <div class="topRRBoxesLeft flex">
+          <div className="topRRBoxes flex">
+            <div className="topRRBoxesLeft flex">
               <a href="/"
-                ><div class="topRRBox flex">
-                  <div class="topRRBoxLeft">
-                    <img src="./assets/restaurants/location_list_1.jpg" />
+                ><div className="topRRBox flex">
+                  <div className="topRRBoxLeft">
+                    <img src={trr1} />
                   </div>
-                  <div class="topRRBoxRight flex">
+                  <div className="topRRBoxRight flex">
                     <span>Italian</span>
                     <h3>La Monnalisa</h3>
                     <p>8 Patriot Square E2 9NF</p>
@@ -125,11 +133,11 @@
                 </div></a
               >
               <a href="/"
-                ><div class="topRRBox flex">
-                  <div class="topRRBoxLeft">
-                    <img src="./assets/restaurants/location_list_2.jpg" />
+                ><div className="topRRBox flex">
+                  <div className="topRRBoxLeft">
+                    <img src={trr2} />
                   </div>
-                  <div class="topRRBoxRight flex">
+                  <div className="topRRBoxRight flex">
                     <span>Italian</span>
                     <h3>La Monnalisa</h3>
                     <p>8 Patriot Square E2 9NF</p>
@@ -138,11 +146,11 @@
                 </div></a
               >
               <a href="/"
-                ><div class="topRRBox flex">
-                  <div class="topRRBoxLeft">
-                    <img src="./assets/restaurants/location_list_3.jpg" />
+                ><div className="topRRBox flex">
+                  <div className="topRRBoxLeft">
+                    <img src={trr3} />
                   </div>
-                  <div class="topRRBoxRight flex">
+                  <div className="topRRBoxRight flex">
                     <span>Italian</span>
                     <h3>La Monnalisa</h3>
                     <p>8 Patriot Square E2 9NF</p>
@@ -151,13 +159,13 @@
                 </div></a
               >
             </div>
-            <div class="topRRBoxesRight flex">
+            <div className="topRRBoxesRight flex">
               <a href="/"
-                ><div class="topRRBox flex">
-                  <div class="topRRBoxLeft">
-                    <img src="./assets/restaurants/location_list_4.jpg" />
+                ><div className="topRRBox flex">
+                  <div className="topRRBoxLeft">
+                    <img src={trr4}/>
                   </div>
-                  <div class="topRRBoxRight flex">
+                  <div className="topRRBoxRight flex">
                     <span>Italian</span>
                     <h3>La Monnalisa</h3>
                     <p>8 Patriot Square E2 9NF</p>
@@ -166,11 +174,11 @@
                 </div></a
               >
               <a href="/"
-                ><div class="topRRBox flex">
-                  <div class="topRRBoxLeft">
-                    <img src="./assets/restaurants/location_list_5.jpg" />
+                ><div className="topRRBox flex">
+                  <div className="topRRBoxLeft">
+                    <img src={trr5}/>
                   </div>
-                  <div class="topRRBoxRight flex">
+                  <div className="topRRBoxRight flex">
                     <span>Italian</span>
                     <h3>La Monnalisa</h3>
                     <p>8 Patriot Square E2 9NF</p>
@@ -179,11 +187,11 @@
                 </div></a
               >
               <a href="/"
-                ><div class="topRRBox flex">
-                  <div class="topRRBoxLeft flex">
-                    <img src="./assets/restaurants/location_list_6.jpg" />
+                ><div className="topRRBox flex">
+                  <div className="topRRBoxLeft flex">
+                    <img src={trr6} />
                   </div>
-                  <div class="topRRBoxRight flex">
+                  <div className="topRRBoxRight flex">
                     <span>Italian</span>
                     <h3>La Monnalisa</h3>
                     <p>8 Patriot Square E2 9NF</p>
@@ -196,28 +204,28 @@
         </div>
       </section>
 
-      <section class="startNow flex alignCenter">
-        <div class="snContainer">
+      <section className="startNow flex alignCenter">
+        <div className="snContainer">
           <h4>FOOLIVERY DELIVERY</h4>
           <h2>We deliver to your office</h2>
           <p>Enjoy a tasty food in minutes!</p>
           <a href="/"><button>Start Now</button></a>
         </div>
       </section>
-      <section class="cta flex alignCenter">
-        <div class="ctaContainer flex alignCenter">
-          <div class="ctaLeft flex alignCenter">
-            <div class="ctaBox flex">
-              <div class="ctaBoxChild">
-                <img src="assets/cta/how_1.svg"/>
+      <section className="cta flex alignCenter">
+        <div className="ctaContainer flex alignCenter">
+          <div className="ctaLeft flex alignCenter">
+            <div className="ctaBox flex">
+              <div className="ctaBoxChild">
+                <img src={how1}/>
                 <h3>Easly Order</h3>
                 <p>
                   Faucibus ante, in porttitor tellus blandit et. Phasellus
                   tincidunt metus lectus sollicitudin.
                 </p>
               </div>
-              <div class="ctaBoxChild">
-                <img src="./assets/cta/how_2.svg" />
+              <div className="ctaBoxChild">
+                <img src={how2} />
                 <h3>Quick Delivery</h3>
                 <p>
                   Maecenas pulvinar, risus in facilisis dignissim, quam nisi
@@ -225,9 +233,9 @@
                 </p>
               </div>
             </div>
-            <div class="ctaBox">
-              <div class="ctaBoxChild">
-                <img src="./assets/cta/how_3.svg" />
+            <div className="ctaBox">
+              <div className="ctaBoxChild">
+                <img src={how3} />
                 <h3>Enjoy Food</h3>
                 <p>
                   Morbi convallis bibendum urna ut viverra. Maecenas quis
@@ -236,7 +244,7 @@
               </div>
             </div>
           </div>
-          <div class="ctaRight">
+          <div className="ctaRight">
             <h2>Start Ordering Now</h2>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
@@ -252,11 +260,11 @@
         </div>
       </section>
     </main>
-
-    <!-- Footer Section -->
-    <footer class="flex alignCenter">
-      <div class="fContainer flex">
-        <div class="fTab">
+{/* 
+    <!-- Footer Section --> */}
+    <footer className="flex alignCenter">
+      <div className="fContainer flex">
+        <div className="fTab">
           <h3>QUICK LINKS</h3>
           <ul>
             <li><a href="/">Home</a></li>
@@ -265,7 +273,7 @@
             <li><a href="/">Login</a></li>
           </ul>
         </div>
-        <div class="fTab">
+        <div className="fTab">
           <h3>CATEGORIES</h3>
           <ul>
             <li><a href="/">Top Categories</a></li>
@@ -274,7 +282,7 @@
             <li><a href="/">Latest Submissions</a></li>
           </ul>
         </div>
-        <div class="fTab">
+        <div className="fTab">
           <h3>CONTACTS</h3>
           <ul>
             <li>
@@ -288,12 +296,13 @@
             <li><a href="/">info@domain.com</a></li>
           </ul>
         </div>
-        <div class="fTab">
+        <div className="fTab">
           <h3>KEEP IN TOUCH</h3>
           <input placeholder="Your Email" />
         </div>
       </div>
     </footer>
-  </body>
-  <script src="main.js"></script>
-</html>
+
+ </>
+  }
+export default Homepage;
