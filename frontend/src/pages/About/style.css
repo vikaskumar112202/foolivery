@@ -1,7 +1,79 @@
-body{
-    background-color:wheat;
+.about{
+    height: 55vh;
+    background-color:  #fbf3cc;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
-#aboutHeading{
-    text-align: center;
-    color: blue;
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
 }
+h1{
+     font-size: 3rem;
+     font-weight: 500;
+}
+.Box{
+    height: 145vh;
+    background-color:#f9fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 2rem;
+
+}
+.Box .boxleft{
+    background-image: url(../../assets/aboutbox1.jpg);
+    background-size: cover;
+    width: 50%;
+    height: 120vh;
+    border-radius: 0.3rem;
+}
+.Box .boxright{
+ width: 40%;
+ display: flex;
+ justify-content: center;
+ align-items: flex-start;
+ flex-direction: column;
+ gap: 1.5rem;
+}
+small{
+    font-size: 1rem;
+}
+.ourTeam{
+height: 50rem;
+width: 100%;
+background-color:white;
+}
+   
+
+.boxUp{
+    height: 17rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+#h6{
+    font-size: large;
+}
+.boxdown{
+    height:auto;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+img{
+border-radius: 1.5rem;
+}
+
+
